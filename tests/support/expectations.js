@@ -130,15 +130,15 @@ module.exports = function (request, config) {
           });
       },
 
-      'setting headers': function (test) {
-        request.get('https://authorized.example/')
-          .set({Authorization: "valid_token"})
-          .end(function (err, result) {
-            test.ok(!err);
-            test.equal(result.data, 'your token: valid_token');
-            test.done();
-          });
-      }
+      // 'setting headers': function (test) {
+      //   request.get('https://authorized.example/')
+      //     .set({Authorization: "valid_token"})
+      //     .end(function (err, result) {
+      //       test.ok(!err);
+      //       test.equal(result.data, 'your token: valid_token');
+      //       test.done();
+      //     });
+      // }
     },
   'Method POST': {
       'matching simple request': function (test) {
@@ -242,15 +242,15 @@ module.exports = function (request, config) {
           });
       },
 
-      'setting headers': function (test) {
-        request.post('https://authorized.example/')
-          .set({Authorization: "valid_token"})
-          .end(function (err, result) {
-            test.ok(!err);
-            test.equal(result.data, 'your token: valid_token');
-            test.done();
-          });
-      }
+      // 'setting headers': function (test) {
+      //   request.post('https://authorized.example/')
+      //     .set({Authorization: "valid_token"})
+      //     .end(function (err, result) {
+      //       test.ok(!err);
+      //       test.equal(result.data, 'your token: valid_token');
+      //       test.done();
+      //     });
+      // }
     },
   'Method PUT': {
       'matching simple request': function (test) {
@@ -354,15 +354,15 @@ module.exports = function (request, config) {
           });
       },
 
-      'setting headers': function (test) {
-        request.put('https://authorized.example/')
-          .set({Authorization: "valid_token"})
-          .end(function (err, result) {
-            test.ok(!err);
-            test.equal(result.data, 'your token: valid_token');
-            test.done();
-          });
-      }
+      // 'setting headers': function (test) {
+      //   request.put('https://authorized.example/')
+      //     .set({Authorization: "valid_token"})
+      //     .end(function (err, result) {
+      //       test.ok(!err);
+      //       test.equal(result.data, 'your token: valid_token');
+      //       test.done();
+      //     });
+      // }
     }
   };
 };
