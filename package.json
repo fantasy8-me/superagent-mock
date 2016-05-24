@@ -1,18 +1,17 @@
 {
-  "name": "superagent-mock",
+  "name": "superagent-mock-ext",
   "description": "superagent plugin allowing to simulate HTTP calls by returning data fixtures based on the requested URL.",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "keywords": [
     "superagent",
     "mock",
     "isomorphic"
   ],
-  "bugs": "https://github.com/M6Web/superagent-mock/issues",
   "license": "MIT",
   "main": "./lib/superagent-mock.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/M6Web/superagent-mock"
+    "url": "https://github.com/fantasy8-me/superagent-mock-ext"
   },
   "dependencies": {
     "qs": "^2.3.3",
